@@ -276,6 +276,6 @@ def test_add_photo_of_pet_invalid(pet_id='', pet_photo_path='images/nerpa2.jpg')
 
     status, result = pf.set_photo(auth_key, 'None', pet_photo_path)
 
-    # Проверяем, что статус ответа = 200 и фото питомца соответствует заданному
+    # Проверяем, что статус ответа = 400
     assert status == 400
-    assert result['pet_photo']
+    #assert result['pet_photo']
